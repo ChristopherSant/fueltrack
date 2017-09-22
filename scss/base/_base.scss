@@ -1,0 +1,33 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+p{
+  @include body_text;
+  color:$text-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+  @include font_family;
+  line-height:100%;
+}
+
+
+h1,h2, h3{
+  color:$red;
+  @include bold_font;
+}
+
+h1{
+  font-size:2em;
+  @media #{$medium}{
+    font-size:2.625em;
+  }
+}
+
+h2{
+  font-size:1.55em;
+}
+
+
+
+@import "alignment.scss";

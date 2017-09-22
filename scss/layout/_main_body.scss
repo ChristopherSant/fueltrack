@@ -1,0 +1,145 @@
+/* Main body related elements layout */
+
+#v-brand-model{
+  border-bottom: 1px solid $grey-primary;
+  padding-bottom:32px;
+  margin:0 0 24px 0;  
+  @media #{$medium}{
+  
+    
+  }
+}
+
+h1[data-fuel-type]{
+    margin: 12px 0 24px;
+    padding: 24px 0;
+    border-top: 1px solid $grey-primary;
+    border-bottom: 1px solid $grey-primary;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @media #{$medium}{
+      text-align:left;
+      margin: 12px 0 36px;
+      padding: 0;
+      border:none;
+      font-size:2em;
+       
+    }
+}
+.row .row {
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+#filter-records{
+  @include flex_center;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+
+#calc-values{
+  padding-left:0;
+  padding-right:0;
+  form{
+    @include shadow;
+    @include border;
+    padding:24px 16px;
+    @media #{$medium}{
+      padding:24px 52px;
+    }
+    .form-group{
+      @include space-between;
+      margin:24px auto;
+      label{
+        @include font_family;
+        width:100%;
+        line-height:130%;
+        font-weight:700;
+        color:$text-color;
+      }
+      input, select, input[type]{
+        width:100%;
+        min-width: 180px;
+        max-width: 360px;
+        height: 42px;
+        background: $grey-hint;
+        background-color: $grey-hint;
+        border: 1px solid $grey-primary ;
+        box-sizing: border-box;
+        border-radius: 4px ;
+        margin: 0;
+        padding:0 8px;
+        color:$green;
+        font-weight:700;
+      }
+    }
+  }
+  #estimated-distance{
+    margin: 24px 0;
+    display: block;
+    padding: 24px 0;
+    text-align: center;
+    h1{
+      margin-bottom:0;
+    }
+    @media #{$medium}{
+      margin:0;
+      padding:0;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 24px;
+      border: none;
+      }
+    
+    }
+}
+
+
+#mpg-resume{
+  h1{
+    &:nth-child(2){ 
+      margin-bottom:0;
+    }
+  }
+  p{
+      margin-bottom:0;
+      font-weight:700;
+      letter-spacing:0;
+  }
+  h3#amount-filled{
+    width:50%
+    
+  }
+  
+  #estimated-distance{
+    border-top: 1px solid $grey-primary ;
+    border-bottom: 1px solid $grey-primary ;
+    @media #{$medium}{
+      border:none;
+    }
+  }
+}
+
+#mpg-calculator{
+      padding-right: .625rem;
+    padding-left: .625rem;
+}
+
+#btn-grid{
+  border-top:1px solid $grey-primary;
+  padding-top:24px;
+  margin:0 20px;
+  @media #{$medium}{
+    display:flex;
+    justify-content:center;
+    margin-top:48px;
+    .button{
+      margin:24px 48px;
+    }
+   }
+  
+}
+

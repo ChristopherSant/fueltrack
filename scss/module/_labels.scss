@@ -1,0 +1,47 @@
+.v-label{
+  display:inline-block;
+    min-width: 140px;
+    padding: 0 12px;
+    max-width: 220px;
+height: 42px;
+margin:16px 24px;
+background:$grey-hint;
+/* Alfa Romeo */
+@include body_text;
+font-weight:700;
+color: #424242;
+vertical-align:middle;
+text-align:center;
+line-height:2.5em;
+border-radius: 4px;
+  &:hover{
+box-shadow: 0px 4px 12px rgba(24, 208, 253, 0.32);
+color:$blue;
+  }
+
+}
+
+
+
+#v-model, #v-model-year{
+  display:none;
+  width:100%;
+  @media #{$medium}{
+    height:auto;
+    min-height:400px;
+    max-height:400px;
+    border-top: 1px solid $grey-primary;
+    border-radius:0 0 4px 4px;
+    display:inline-block;
+   
+  }
+  .v-label{
+    background:none;
+    padding:inherit;
+    text-align:left;
+    margin:16px 32px;
+    &:hover{
+      box-shadow:none;
+    }
+  }
+}

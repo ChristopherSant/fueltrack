@@ -1,0 +1,60 @@
+
+
+@mixin font_family{
+font-family: Source Sans Pro;
+//font-style: normal;
+}
+
+@mixin oswald{
+font-family: 'Oswald', sans-serif;
+font-weight:700;
+}
+@mixin body_text{
+@include font_family;
+font-weight: 400;
+font-size: 1em;
+letter-spacing: 1px;
+color:$text-color;
+}
+
+
+@mixin bold_font{
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 700;
+}
+@mixin shadow{
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2), 0px 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+@mixin border{
+  border-radius:4px;
+}
+
+@mixin border_grey{
+  border: 1px solid $grey-primary;
+}
+
+
+@mixin flex_center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex_align($f_type){
+    display: flex;
+    justify-content: $f_type;
+}
+
+@mixin space_between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin red-btn{
+background: $red;
+@include bold_font;
+border-radius: 4px;
+text-align: center;
+}
