@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Calculadora v 0.5 Alpha</title>
   
-  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'>
 
@@ -17,21 +17,20 @@
 <header class="header  role="banner" >             
         <div class="top-bar" id="top-bar-menu">
             <div class="top-bar-left show-for-medium">
-                <ul class="menu">
-                    <li class="menu-text">Test Site</li>
-                </ul>
+                <a href="#" id="logo"><img src="images/logo.svg"></a>
             </div>
             <div class="top-bar-right">
                 <ul id="menu-main-menu-1" class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
-                    <li><a href="#">Sample Page</a></li>
-                    <li><a href="#">Sample Page</a></li>
-                    <li><a href="#">Sample Page</a></li>
-                    <li><a href="#">Sample Page</a></li>
+                    <li>Gasolina Regular <span data-variation='rise'>+5</span></li>
+                    <li>Gasolina Premium <span data-variation='decrease'>RD$ 200</span></li>
+                    <li><a href="#"  id="profile">CS</a></li>
+                    <li><a href="#" id="faq"><img src="images/faq.svg"></a></li>
                 </ul>
             </div>
         </div>
     </header>
 
+<div class="spacer"></div>
 
 <div class="row">
   
@@ -87,16 +86,20 @@
       <p > <b data-mpg-label='city'></b> <span data-citympg=''> </span></p>
       <p> <b data-mpg-label='highway'> </b> <span data-hwmpg=''> </span></p>
       <p><b  data-mpg-label='avg'></b> <span data-avgmpg=''> </span></p>
-      
+      <span class='spacer_md'></span>
       <button  id="change-length" href="#" data-unit="miles" class="button outline left"> Cambiar a KM</button>
     </div>
     <div id="calc-values" class="small-12 medium-7 large-6 columns">
       
       <form class="form-horizontal" name='estimator'>
 <fieldset>
+<h2 class='text-center'>Calcular millas a recorrer
+segun presupuesto</h2>
 
+<span class="spacer_sm"></span>
 <!-- Text input-->
 <div class="form-group">
+
   <label class=" control-label" for="buc_500">Combustible</label>
   
       
@@ -184,10 +187,9 @@
     <div class="small-12 medium-12 large-6 columns">
 
         <ul class="menu">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Youtube</a></li>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         </ul>
       </div>
    

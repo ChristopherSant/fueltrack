@@ -1,14 +1,24 @@
+@import "defaults.scss";
 @import "variables.scss";
 @import "mixins.scss";
+
+
+body{
+  background: $white;
+  color: $text-color;
+  @include font_family;
+  font-weight: 400;
+}
 
 p{
   @include body_text;
   color:$text-color;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p,span{
   @include font_family;
-  line-height:100%;
+  line-height:110%;
+
 }
 
 

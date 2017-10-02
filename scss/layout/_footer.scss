@@ -1,3 +1,17 @@
 .footer .menu{
 	@include flex_align(flex-end);
 }
+
+.footer{
+	width: 100%;
+	color: $red;
+	position: absolute;
+	bottom: 0;
+	padding: 12px 16px;
+	i{
+		color: $red;
+		display: inline-block;
+	    font-size: 1.5rem;
+	    margin: 0 24px;
+	}
+}
