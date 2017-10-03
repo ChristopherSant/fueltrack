@@ -69,6 +69,7 @@
          $('#mpg-calculator').removeClass('hide');
          $('#car-model, #continue-btn, #mobile-v-year').addClass('hide');
          $('#car-model .container').empty();
+         $('#second-title').html('Selecciona tu modelo').addClass('hide');
          mpg_resume();
          if (windowSize <= 760) {
              length_unit_btn.removeClass('left');
@@ -137,7 +138,7 @@
          vmodel = '';
          vmodel = $(this).text();
          vyear_label.removeClass('active').addClass('focus');
-
+         $('#second-title').html('Indica el año de tu vehículo');
          if (vmodel !== '') {
              $('#car-model .container').empty();
          }
@@ -239,6 +240,8 @@
          vbrand = '';
          vbrand = $(this).text();
          vmodel_label.removeClass('active').addClass('focus');
+        $('#main-title').addClass('hide');
+        $('#second-title').removeClass('hide');            
          if (vbrand !== '') {
              $('#filter-records, #search-bar').addClass('hide');
              $('#filter-records').empty();
@@ -318,7 +321,7 @@
 
          vyear_label.html('Año');
          vmodel_label.html('Modelo').addClass('active');
-
+         //$('#main-title').removeClass('hide');
          if (windowSize <= 768) {
 
              mobile_vehicle.addClass('hide');
@@ -564,3 +567,11 @@ $('#change-length').on('click',mpg_data_change);
      }
      e.preventDefault();
  };
+
+
+// UI animations 
+
+ $('#txt-search').click(function(){
+   // $('#main-title').addClass('hide');
+
+ });
