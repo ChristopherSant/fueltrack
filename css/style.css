@@ -474,7 +474,8 @@ h1[data-fuel-type] {
   #v-resume span {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 2.286em; }
+    font-size: 2.286em;
+    line-height: 1.604; }
 
 #car-model {
   /* Rectangle 6 */
