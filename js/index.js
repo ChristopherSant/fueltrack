@@ -242,6 +242,7 @@
          vmodel_label.removeClass('active').addClass('focus');
         $('#main-title').addClass('hide');
         $('#second-title').removeClass('hide');            
+        
          if (vbrand !== '') {
              $('#filter-records, #search-bar').addClass('hide');
              $('#filter-records').empty();
@@ -252,6 +253,25 @@
          }
          move_v_labels_to_box();
          models();
+
+         /*////////////////////////////////////*/
+         
+        var model_box = anime.timeline();
+        model_box
+        .add({targets: '#model-select',
+                perspective: '2500px',
+                transformStyle: 'preserve-3d',
+                backgroundColor: 'red',
+                duration:100})
+        .add({
+                targets: '#car-model',
+                rotateX:50,
+                duration:1000
+            });
+
+        /*//////////////////////////////////*/
+
+
 
 
      };

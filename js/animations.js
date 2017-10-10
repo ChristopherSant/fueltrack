@@ -16,20 +16,10 @@ $('#txt-search').click(function(){
 
 	});
 
-	// setTimeout(function(){
-	// 	  	$('#main-title').addClass('hide');  
-	// 	  	searchBar = anime({
-	// 			  targets: '#filter-records, #search-bar',
-	// 			  translateY: '0',
-	// 			  easing: 'easeOutQuart',
-	// 		});
-	// },500);
-
-
 })
 
 
-$(vbrand_label).click(function(){
+$('#filter-records .v-label').click(function(){
 	var brand_select = anime({
 		  targets: '#search-bar, #filter-records',
 		  opacity: 100,
@@ -42,3 +32,25 @@ $(vbrand_label).click(function(){
 
  	})
 });
+
+
+$('.v-label').click(function(){
+	$.when(v_brand).then(function(){
+		var model_box = anime.timeline();
+
+		model_box
+		.add({targets: '#model-select',
+				perspective: '2500px',
+			    transformStyle: 'preserve-3d',
+			    backgroundColor: 'red',
+			    duration:10000})
+		.add({
+				targets: '#car-model',
+				rotateX:50,
+				duration:10000
+			});
+	});
+	
+});
+
+	
